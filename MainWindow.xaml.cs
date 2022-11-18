@@ -25,72 +25,13 @@ namespace Wpf_Chemeris_PR2._2._1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-                        textBox1.Text = textBox1.Text + 0;
-        }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            textBox1.Text = textBox1.Text + 1;
+            Button b = (Button)sender;
+            tb.Text += b.Content.ToString();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            textBox1.Text = textBox1.Text + 2;
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            textBox1.Text = textBox1.Text + 3;
-        }
-
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-            textBox1.Text = textBox1.Text + 4;
-        }
-
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            textBox1.Text = textBox1.Text + 5;
-        }
-
-        private void Button_Click_6(object sender, RoutedEventArgs e)
-        {
-            textBox1.Text = textBox1.Text + 6;
-        }
-
-        private void Button_Click_7(object sender, RoutedEventArgs e)
-        {
-            textBox1.Text = textBox1.Text + 7;
-        }
-
-        private void Button_Click_8(object sender, RoutedEventArgs e)
-        {
-            textBox1.Text = textBox1.Text + 8;
-        }
-
-        private void Button_Click_9(object sender, RoutedEventArgs e)
-        {
-            textBox1.Text = textBox1.Text + 9;
-        }
-
-        private void Button_Click_10(object sender, RoutedEventArgs e)
-        {
-            textBox1.Text = textBox1.Text + ",";
-        }
-
-        private void Button_Click_11(object sender, RoutedEventArgs e)
-        {
-            //В душе не чаю как делать, у меня кредит ипотека, рил проблем много
-        }
-
-        private void Button_Click_12(object sender, RoutedEventArgs e)
-        {
-            textBox1.Clear();
-        }
-
-        private void Button_Click_13(object sender, RoutedEventArgs e)
+        private void Result_click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -148,4 +89,23 @@ namespace Wpf_Chemeris_PR2._2._1
                 tb.Text += "=" + (op1 / op2);
             }
         }
+
+        private void Off_Click_1(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void Del_Click(object sender, RoutedEventArgs e)
+        {
+            tb.Text = "";
+        }
+
+        private void R_Click(object sender, RoutedEventArgs e)
+        {
+            if (tb.Text.Length > 0)
+            {
+                tb.Text = tb.Text.Substring(0, tb.Text.Length - 1);
+            }
+        }
+    }
     }
