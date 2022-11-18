@@ -65,7 +65,7 @@
 
         <Button Padding="0 0 0 0" Content="0" Grid.Column="1" Grid.Row="11" Grid.ColumnSpan="2"  Grid.RowSpan="1" Click="Button_Click"/>
         <Button Padding="0 0 0 0" Content="." Grid.Column="4" Grid.Row="11" Grid.ColumnSpan="2"  Grid.RowSpan="1" Click="Button_Click_10"/>
-        <Button Padding="0 0 0 0" Content="=" Grid.Column="7" Grid.Row="11" Grid.ColumnSpan="5"  Grid.RowSpan="1"/>
+        <Button Padding="0 0 0 0" Content="=" Grid.Column="7" Grid.Row="11" Grid.ColumnSpan="5"  Grid.RowSpan="1" Click="Button_Click_13"/>
 
     </Grid>
 </Window>
